@@ -2,6 +2,7 @@ package com.bimz.springdemo.entities;
 
 import java.util.LinkedHashMap;
 
+
 public class Student {
 
 	private String firstName;

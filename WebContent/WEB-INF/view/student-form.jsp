@@ -15,8 +15,7 @@
 		<br>
 		<br>
 	
-		Last name: <form:input path="lastName" />
-
+		Last name:(*) <form:input path="lastName" />
 		<br>
 		<br>
 		Country :
