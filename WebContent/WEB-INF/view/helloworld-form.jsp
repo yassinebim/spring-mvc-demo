@@ -18,5 +18,12 @@
 		<input type="text" name="studentName" placeholder="What's your name">
 		<input type="submit">
 	</form>
+	
+	<h4>processFormVersionThree</h4>
+
+	<form action="processFormVersionThree" method="GET">
+		<input type="text" name="studentName" placeholder="What's your name">
+		<input type="submit">
+	</form>
 </body>
 </html>

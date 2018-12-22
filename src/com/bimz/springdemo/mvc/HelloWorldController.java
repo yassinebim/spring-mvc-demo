@@ -20,14 +20,15 @@ public class HelloWorldController {
 		return "helloworld";
 	}
 	
-//	@RequestMapping("/processFormVersionTwo")
-//	public String processFormVersionTwo(HttpServletRequest req, Model model) {
-//		model.addAttribute("message", "Yoo "+req.getParameter("studentName").toUpperCase());
-//		return "helloworld";
-//	}
 	@RequestMapping("/processFormVersionTwo")
-	public String processFormVersionTwo(@RequestParam("studentName") String stundentName, Model model) {
-		model.addAttribute("message", "Yoo "+stundentName.toUpperCase());
+	public String processFormVersionTwo(HttpServletRequest req, Model model) {
+		model.addAttribute("message", "Yoo processFormVersionTwo(HttpServletRequest req, Model model) ==>"+req.getParameter("studentName").toUpperCase());
+		return "helloworld";
+	}
+	
+	@RequestMapping("/processFormVersionThree")
+	public String processFormVersionThree(@RequestParam("studentName") String stundentName, Model model) {
+		model.addAttribute("res", "processFormVersionThree(@RequestParam(\"studentName\") String stundentName, Model model) ==> "+stundentName.toUpperCase());
 		return "helloworld";
 	}
 
